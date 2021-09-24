@@ -1,0 +1,24 @@
+id = PRIMARY_KEY(NOT_NULL, UNIQUE, AUTO_INCREMENT) INT;
+vin = NOT_NULL UNIQUE VARCHAR(20);   *C1)  
+plate = NOT_NULL VARCHAR(20);      *C2)
+plate_provenance = NOT_NULL VARCHAR(5);
+brand = NOT_NULL VARCHAR(50);
+model = NOT_NULL VARCHAR(100);
+
+
+
+
+COMMENTI E SPIEGAZIONI SCELTE PRESE:
+
+*C1) Il numero di telaio nelle macchine moderne è sempre di 17 caratteri ed è unico anche fra diversi paesi,
+ ma nelle vecchie era 16 e non si sa mai che un giorno possano aumentare.
+********************************   ********************************   ********************************
+
+*C2)Il numero di è sempre unico se siamo nello stesso paese, ma fra paesi diversi potremmo ritrovare la stessa targa,
+inoltre ogni paese ha il proprio formato di targa, ciò implica che alcune siano più lunghe di altre
+(es: quelle giapponesi arrivano anche fino a 12),in ogni caso, in futuro con l'aumento 
+delle macchine prodotte aumenteranno anche i caratteri delle targhe, quindi metto VARCHAR(20) per stare sicuro.
+ ********************************   ********************************   ********************************
+
+ *C3)
+  ********************************   ********************************   ********************************
